@@ -1,0 +1,18 @@
+<div class="container">
+    <p-card>
+            <div class="text-center logo">
+                <p-image class="logo" src="/src/assets/Logo IASD.png"></p-image>
+            </div>
+            <form class="login-form">
+                    <input type="text" name="userApp" pInputText placeholder="usuário" [(ngModel)]="username">
+
+                    <input type="password" name="passwordApp" pInputText placeholder="senha" [(ngModel)]="password">
+
+                <span>
+                    {{mensagemLogin}}
+                </span>
+                
+                <button (click)="btnLogin()" pButton pRipple color="primary" type="submit">Entrar</button>
+            </form>
+    </p-card>
+</div>
